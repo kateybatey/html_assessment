@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+<h2>Engineering Application</h2>
+<body>
+ <div class="container">
+	<p>
+		Use this form to apply for one of our open positions!
+	</p>
+	<br>
+	<form>
+	First Name: <input type="text" name="firstname"><br><br>
+	Last Name: <input type="text" name="lastname"><br><br>
+	Please provide your salary requirements:
+	<input type="text" name="name" pattern="[0-9]"><br><br>
+		Which position are you applying for?<br>
+		<br>
+		<select name="position">
+		<option value="Software Engineer">Software Engineer</option>
+		<option value="QA Engineer">QA Engineer</option>
+		<option value="Product Manager">Product Manager</option><br>
+		</select>
+	</form>
+	<br>
+	<form action="/application-success" method=POST> 
+	<input type="submit" value="Apply!">
+	</form>
+
+
+</body>
+</html>
